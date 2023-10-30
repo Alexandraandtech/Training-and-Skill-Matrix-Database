@@ -1,90 +1,87 @@
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f0f5f9;
-    color: #333;
-}
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+ }
 
-.skill-matrix {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.header {
-    background-color: #007bff;
-    color: white;
+ header {
+    background-color: #1a4d8f;
+    color: #fff;
     padding: 10px;
     text-align: center;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 20px;
-}
-
-label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-}
-
-input, select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-select {
-    appearance: none;
-    padding: 10px;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-}
+ }
  
+ .banner {
+    background-color: #e6e6e6;
+    padding: 20px;
+    text-align: center;
+ }
 
-
-       .profile-form {
-           max-width: 400px;
-           margin: 0 auto;
-           background-color: #fff;
-           padding: 20px;
-           border-radius: 8px;
-           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-       }
-
-
-       input {
-           width: 100%;
-           padding: 10px;
-           margin-bottom: 15px;
-           box-sizing: border-box;
-           border: 1px solid #ccc;
-           border-radius: 4px;
-       }
-
-       .profile-picture {
-           text-align: center;
-           margin-bottom: 20px;
-       }
-
-       .profile-picture img {
-           width: 100px;
-           height: 100px;
-           border-radius: 50%;
-           object-fit: cover;
-       }
-
+ .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 20px auto;
+ }
+ 
+ .demographics, .skills {
+    border: 2px solid #1a4d8f;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+ }
+ 
+ .demographics {
+    text-align: center;
+    order: 1;
+ }
+ 
+ .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 2;
+    flex: 1;
+ }
+ 
+ .skill-row {
+    margin-bottom: 20px;
+ }
+ 
+ label {
+    display: block;
+    margin-bottom: 5px;
+ }
+ 
+ input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+ }
+ 
+ button {
+    padding: 10px;
+    background-color: #1a4d8f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ button:hover {
+    background-color: #143867;
+ }
+ 
+ img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+ }
+ 
 
       

@@ -1,73 +1,112 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Skill Matrix Form</title>
-   <link rel="stylesheet" href="style.css"/>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Profile Picture Form</title>
-  
-   
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+   <title>Training and Skill Matrix</title>
 </head>
 <body>
-   <div class="skill-matrix">
-       <div class="header">
-           <h2>Skill Matrix</h2>
+
+    <header>
+        <h1>Page Title Here</h1>
+        <!-- Add any other header elements or navigation here -->
+    </header>
+ 
+    <div class="banner">
+        <!-- Your banner content goes here -->
+        <p>Welcome to the Training and Skill Matrix</p>
+    </div>
+
+   <div class="container">
+       <div class="demographics">
+           <!-- Demographic Information Section -->
+           <img src="profile-placeholder.jpg" alt="Profile Picture">
+           <label for="employee-name">Employee Name:</label>
+           <input type="text" id="employee-name" placeholder="Enter employee name">
+
+           <label for="employee-id">Employee ID:</label>
+           <input type="text" id="employee-id" placeholder="Enter employee ID">
+
+           <label for="site">Site:</label>
+           <input type="text" id="site" placeholder="Enter site">
+
+           <label for="manager">Manager:</label>
+           <input type="text" id="manager" placeholder="Enter manager">
        </div>
 
-    <div class="profile-form">
-        <label for="profilePicture">Profile Picture:</label>
-        <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
- 
-        <div class="profile-picture">
-            <img src="#" alt="Profile Picture Preview" id="profilePicturePreview">
-        </div>
-    </div>
- 
-    <script src="script.js"></script>
- </body>
- </html>
- 
- 
- </body>
- </html>
+       <div class="skills">
+           <!-- Skills Section -->
+           <div class="skill-row">
+               <label for="skill-1">Skill 1:</label>
+               <input type="text" id="skill-1" placeholder="Enter skill 1">
 
+               <label for="skill-proficiency-1">Skill Proficiency:</label>
+               <select id="skill-proficiency-1">
+                   <option value="Beginner">Beginner</option>
+                   <option value="Intermediate">Intermediate</option>
+                   <option value="Advanced">Advanced</option>
+               </select>
 
-       <label for="employeeID">Employee ID:</label>
-       <input type="text" id="employeeID" name="employeeID">
+               <label for="start-date-1">Training Start Date:</label>
+               <input type="text" id="start-date-1" placeholder="Select date" data-input>
 
-       <label for="employeeName">Employee Name:</label>
-       <input type="text" id="employeeName" name="employeeName">
+               <label for="end-date-1">Training End Date:</label>
+               <input type="text" id="end-date-1" placeholder="Select date" data-input>
+           </div>
 
-       <label for="site">Site:</label>
-       <input type="text" id="site" name="site">
+           <div class="skill-row">
+               <label for="skill-2">Skill 2:</label>
+               <input type="text" id="skill-2" placeholder="Enter skill 2">
 
-       <label for="managerName">Manager Name:</label>
-       <input type="text" id="managerName" name="managerName">
+               <label for="skill-proficiency-2">Skill Proficiency:</label>
+               <select id="skill-proficiency-2">
+                   <option value="Beginner">Beginner</option>
+                   <option value="Intermediate">Intermediate</option>
+                   <option value="Advanced">Advanced</option>
+               </select>
 
-       <label for="skill1">Skill 1:</label>
-       <input type="text" id="skill1" name="skill1">
-       <label for="trainingStartDate1">Training Start Date:</label>
-       <input type="date" id="trainingStartDate1" name="trainingStartDate1">
-       <label for="trainingEndDate1">Training End Date:</label>
-       <input type="date" id="trainingEndDate1" name="trainingEndDate1">
+               <label for="start-date-2">Training Start Date:</label>
+               <input type="text" id="start-date-2" placeholder="Select date" data-input>
 
-       <label for="skill2">Skill 2:</label>
-       <input type="text" id="skill2" name="skill2">
-       <label for="trainingStartDate2">Training Start Date:</label>
-       <input type="date" id="trainingStartDate2" name="trainingStartDate2">
-       <label for="trainingEndDate2">Training End Date:</label>
-       <input type="date" id="trainingEndDate2" name="trainingEndDate2">
+               <label for="end-date-2">Training End Date:</label>
+               <input type="text" id="end-date-2" placeholder="Select date" data-input>
+           </div>
 
-       <label for="skill3">Skill 3:</label>
-       <input type="text" id="skill3" name="skill3">
-       <label for="trainingStartDate3">Training Start Date:</label>
-       <input type="date" id="trainingStartDate3" name="trainingStartDate3">
-       <label for="trainingEndDate3">Training End Date:</label>
-       <input type="date" id="trainingEndDate3" name="trainingEndDate3">
+           <div class="skill-row">
+               <label for="skill-3">Skill 3:</label>
+               <input type="text" id="skill-3" placeholder="Enter skill 3">
 
-       <button type="button">Submit</button>
+               <label for="skill-proficiency-3">Skill Proficiency:</label>
+               <select id="skill-proficiency-3">
+                   <option value="Beginner">Beginner</option>
+                   <option value="Intermediate">Intermediate</option>
+                   <option value="Advanced">Advanced</option>
+               </select>
+
+               <label for="start-date-3">Training Start Date:</label>
+               <input type="text" id="start-date-3" placeholder="Select date" data-input>
+
+               <label for="end-date-3">Training End Date:</label>
+               <input type="text" id="end-date-3" placeholder="Select date" data-input>
+           </div>
+
+           <!-- Add more skill rows as needed -->
+
+           <!-- Submit button for data entry -->
+           <button onclick="submitData()">Submit</button>
+       </div>
+   </div>
+
+   <script src="script.js"></script>
+       <script>
+           document.addEventListener('DOMContentLoaded', function () {
+               flatpickr('.skills [data-input]', { dateFormat: 'Y-m-d' });
+           });
+       </script>
    </div>
 
 </body>

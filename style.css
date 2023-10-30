@@ -54,12 +54,6 @@ button {
 }
  
 
-  body {
-           font-family: Arial, sans-serif;
-           margin: 20px;
-           background-color: #f0f5f9;
-           color: #333;
-       }
 
        .profile-form {
            max-width: 400px;
@@ -70,11 +64,6 @@ button {
            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
        }
 
-       label {
-           font-weight: bold;
-           margin-bottom: 5px;
-           display: block;
-       }
 
        input {
            width: 100%;
